@@ -72,3 +72,33 @@ button:hover {
     color: white;
 }
 
+@media (max-width: 768px) {
+    button {
+        font-size: 14px; /* Adjust font size */
+        height: 40px; /* Adjust button height */
+        align-items: center; /* Center text vertically */
+        text-align: center;
+    }
+
+    .container {
+        padding: 15px; /* Reduce padding in the container */
+    }
+
+    video {
+        width: 100%; /* Ensure video takes full width */
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        margin: 5px;
+        font-size: 12px; /* Smaller font size for very small screens */
+        height: 35px; /* Adjust button height */ /* Center text horizontally */
+        align-items: center; /* Center text vertically */
+        text-align: center;
+    }
+
+    .container {
+        padding: 10px; /* Further reduce padding in the container */
+    }
+}
