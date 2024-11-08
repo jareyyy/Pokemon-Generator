@@ -1,0 +1,74 @@
+* {
+    font-family: "Arial", Bold;
+    font-weight: 400;
+    font-style: normal;  
+  }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); /* Semi-transparent blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white for glass effect */
+    border-radius: 16px; /* Rounded corners */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    backdrop-filter: blur(5px); /* Blur effect for the background */
+    -webkit-backdrop-filter: blur(5px); /* Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+    padding: 20px; /* Padding around the content */
+    text-align: center; /* Center text alignment */
+}
+
+video {
+    width: 40%;
+    max-width: 50%;
+    border-radius: 8px;
+}
+
+.controls {
+    margin-top: 10px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #9ca2a9;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button {
+    margin: 5px; /* Keep the margin from the original style */
+    padding: 10px 15px; /* Change padding to match the new style */
+    padding: 0 56px; /* Update padding to the new value */
+    height: 45px; /* Set height as per the new style */
+    line-height: 45px; /* Set line-height as per the new style */
+    border: none; /* Keep border style */
+    border-radius: 7px; /* Update border-radius to match the new style */
+    font-weight: 400; /* Set font-weight as per the new style */
+    font-size: 16px; /* Set font-size as per the new style */
+    background: #fff; /* Change background color to match the new style */
+    color: #000000; /* Change text color to match the new style */
+    cursor: pointer; /* Keep cursor style */
+    box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%); /* Add box-shadow from the new style */
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease; /* Add transition effects */
+}
+
+button:hover {
+    background: #1271d7; /* Update hover background color */
+    box-shadow: 0 6px 20px rgb(93 93 93 / 23%); /* Update hover box-shadow */
+    color: white;
+}
+
