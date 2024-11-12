@@ -12,13 +12,15 @@ async function fetchTikTokVideo(apiKey) {
         const videoPlayer = document.getElementById('videoPlayer');
         const videoSource = document.getElementById('videoSource');
         const videoTitle = document.getElementById('videoTitle');
+        const videoLink = document.getElementById('videoLink');
         const videoUsername = document.getElementById('videoUsername');
         
         // Set video source and info
         videoSource.src = data.videoDownloadLink;
         videoPlayer.load();
         videoTitle.textContent = `Title: ${data.title}`;
-        videoUsername.textContent = `Username: ${data.username}`;
+        videoLink.textContent = `Link: ${data.tiktokUrl}`;
+        videoLink.innerHTML = `Link: <a href="${data.tiktokUrl}" target="_blank" rel="noopener noreferrer">${data.tiktokUrl}</a>`;
 
         // Autoplay the video
         videoPlayer.play();
