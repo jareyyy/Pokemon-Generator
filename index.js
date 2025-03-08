@@ -1,5 +1,5 @@
-async function fetchTikTokVideo(apiKey) {
-    const url = `https://shoti.kenliejugarap.com/getvideo.php?apikey=${apiKey}`;
+async function fetchTikTokVideo() {
+    const url = `https://kaiz-apis.gleeze.com/api/shoti`;
 
     try {
         const response = await fetch(url);
@@ -49,11 +49,11 @@ async function fetchTikTokVideo(apiKey) {
 }
 
 // Example usage
-const apiKey = 'shoti-e157759a2a464cc60dd609355fae95b6876c67b875192c110f297e2f67092ab37219968394808fefc5912d6757fa01ab2e10309cdfdae8818651d81e7d5c51b206771a0eb00b411b21b31683ae26eccf4adf3fd093'; // Replace with your actual API key
-fetchTikTokVideo(apiKey);
+//const apiKey = 'shoti-e157759a2a464cc60dd609355fae95b6876c67b875192c110f297e2f67092ab37219968394808fefc5912d6757fa01ab2e10309cdfdae8818651d81e7d5c51b206771a0eb00b411b21b31683ae26eccf4adf3fd093'; // Replace with your actual API key
+fetchTikTokVideo();
 
 // Add functionality for the Next Video button
 const nextButton = document.getElementById('nextButton');
 nextButton.onclick = () => {
-    fetchTikTokVideo(apiKey);
+    fetchTikTokVideo();
 };
